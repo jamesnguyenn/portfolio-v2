@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-secondary font-body text-primary;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0;
+    padding: 0;
+  }
+}
+.spaceman-fly {
+  animation: spaceMan 10s infinite linear;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+@keyframes spaceMan {
+  50% {
+    transform: translateX(-5%) rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.animate_typing {
+  border-right: 2px solid #000000;
+  animation: opacity 1s ease-in-out infinite;
+}
+
+@keyframes opacity {
+  100% {
+    border-color: transparent;
+  }
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-pagination-bullet-active-main {
+  background-color: #ffffff !important;
+}
