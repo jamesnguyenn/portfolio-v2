@@ -42,7 +42,7 @@ function About() {
           >
             <div className="xl:w-[20%] w-[30%] h-full border-r-2 border-primary flex items-center justify-center ">
               <h3
-                className={`-rotate-90 uppercase  whitespace-nowrap  font-bold text-3xl select-none transition-all duration-400 ease-in-out  `}
+                className={`-rotate-90 uppercase  whitespace-nowrap  font-bold sm:text-3xl text-xl select-none transition-all duration-400 ease-in-out  `}
               >
                 About Me_
               </h3>

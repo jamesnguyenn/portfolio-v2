@@ -28,7 +28,7 @@ function SliderDetail({
         target="_blank"
         rel="noreferrer"
       >
-        <div className="lg:w-[35%] w-full project-body flex flex-col items-start justify-start gap-[10px] p-5 bg-secondary bg-opacity-90 text-black rounded-lg pointer-events-none">
+        <div className="lg:w-[35%] w-full project-body flex flex-col items-start justify-start gap-[20px] p-5 bg-secondary bg-opacity-90 text-black rounded-lg pointer-events-none">
           <div className="project-title">
             <h5 className="lg:text-2xl text-lg font-bold uppercase">{title}</h5>
           </div>

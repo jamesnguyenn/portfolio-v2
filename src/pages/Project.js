@@ -21,8 +21,8 @@ function Project() {
         className="w-full h-full flex flex-col lg:flex-row relative "
       >
         <div className="w-full h-[20%] lg:w-[20%] lg:h-full lg:border-r-2 text-center p-4 flex flex-col items-center justify-center border-b-2 border-primary uppercase gap-[10px]">
-          <div className="font-bold text-3xl animate__animated animate__fadeInDown">
-            _Project
+          <div className="font-bold sm:text-3xl text-xl animate__animated animate__fadeInDown ">
+            _Projects
           </div>
           <p className="text-xs animate__animated animate__fadeIn animate__delay-1s">
             Just to give an overall idea what I am capable of, some of my

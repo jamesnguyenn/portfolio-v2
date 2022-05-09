@@ -44,12 +44,12 @@ function Home() {
       >
         <div
           className={`lg:w-[60%] lg:h-full w-full h-[40%] flex lg:items-end items-end justify-between ${
-            coords <= 1023 || scrollPercent >= 20 ? "border-r-0" : "border-r-4"
+            coords <= 1023 || scrollPercent >= 20 ? "border-r-0" : "border-r-2"
           }  border-primary  lg:p-containerLarge p-containerSmall transition-all duration-300 ease-in-out`}
         >
           <div className="w-[70%]  flex flex-col items-start justify-start gap-[10px]   ">
             <h2
-              className={`text-xl leading-relaxed animate__animated  relative animate__animated animate__fadeIn  animate__fast select-none transition-all duration-500 ease-in-out 
+              className={`sm:text-xl text-md leading-relaxed animate__animated  relative animate__animated animate__fadeIn  animate__fast select-none transition-all duration-500 ease-in-out 
               ${
                 scrollPercent >= 5 &&
                 scrollPercentPrevious.current < scrollPercent
@@ -60,7 +60,7 @@ function Home() {
               Hello There !, 👋
             </h2>
             <h3
-              className={`text-3xl leading-relaxed font-bold select-none animate__animated ${
+              className={`sm:text-3xl text-xl leading-relaxed font-bold select-none animate__animated ${
                 scrollPercent >= 10 &&
                 scrollPercentPrevious.current < scrollPercent
                   ? "animate__fadeOut"
@@ -70,7 +70,7 @@ function Home() {
               <code>{title}</code> <span className="animate_typing" />
             </h3>
             <h4
-              className={`text-md animate__animated  select-none ${
+              className={`sm:text-md text-xs animate__animated  select-none ${
                 scrollPercent >= 15 &&
                 scrollPercentPrevious.current < scrollPercent
                   ? "animate__bounceOut"

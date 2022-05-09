@@ -10,7 +10,7 @@ function Header() {
   const coords = useViewPortContext();
   const { scrollPercent } = useScrollContext();
   const { show, setShow, nodeRef } = useClickOutSide();
-  console.log("🚀 ~ show", show);
+
   const handleClickNavBar = useCallback(() => {
     setShow(true);
   }, [setShow]);
