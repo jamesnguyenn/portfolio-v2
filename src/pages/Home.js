@@ -47,7 +47,7 @@ function Home() {
             coords <= 1023 || scrollPercent >= 20 ? "border-r-0" : "border-r-2"
           }  border-primary  lg:p-containerLarge p-containerSmall transition-all duration-300 ease-in-out`}
         >
-          <div className="w-[70%]  flex flex-col items-start justify-start gap-[10px]   ">
+          <div className="w-[70%]  flex flex-col items-start justify-start gap-[15px]   ">
             <h2
               className={`sm:text-xl text-md leading-relaxed animate__animated  relative animate__animated animate__fadeIn  animate__fast select-none transition-all duration-500 ease-in-out 
               ${
@@ -70,7 +70,7 @@ function Home() {
               <code>{title}</code> <span className="animate_typing" />
             </h3>
             <h4
-              className={`sm:text-md text-xs animate__animated  select-none ${
+              className={`sm:text-base text-xs animate__animated  select-none ${
                 scrollPercent >= 15 &&
                 scrollPercentPrevious.current < scrollPercent
                   ? "animate__bounceOut"
