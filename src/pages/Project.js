@@ -72,36 +72,37 @@ export default memo(Project);
 const projectData = [
     {
         id: 1,
-        title: 'Unsplash Photo App',
-        image: unplashApp,
-        href: 'https://jamesnguyenn.github.io/unplash-photo/',
-        desc: {
-            feature: {
-                title: 'Features:',
-                desc: "A photo library application. Its a fun project, tried to explore and implement hooks, react-router, context-API, search photo, keep photo you've liked",
-            },
-            technologies: {
-                title: 'Technologies:',
-                desc: 'ReactJS, React Router V6, Context API, Unsplash Data API',
-            },
-        },
-    },
-    {
-        id: 2,
         title: 'Netflix Clone Page',
         image: netflixClone,
         href: 'https://netflix-clone-ab852.web.app/',
         desc: {
             feature: {
                 title: 'Features:',
-                desc: 'Clone Netflix Project (Login/Logout/Register, Watch Movie, Purchase Billing using Stripe Payment)',
+                desc: 'Clone Netflix Project (Login/Logout/Register, Watch Movie, Purchase Billing using Stripe Payment)...',
             },
             technologies: {
                 title: 'Technologies:',
-                desc: 'ReactJS (Hooks),Redux, Context API, Firebase , TMDB Data API',
+                desc: 'ReactJS (Hooks), Redux, Context API, Firebase , TMDB Data API...',
             },
         },
     },
+    {
+        id: 2,
+        title: 'Unsplash Photo App',
+        image: unplashApp,
+        href: 'https://jamesnguyenn.github.io/unplash-photo/',
+        desc: {
+            feature: {
+                title: 'Features:',
+                desc: "A photo library application. Its a fun project, tried to explore and implement hooks, react-router, context-API, search photo, keep photo you've liked...",
+            },
+            technologies: {
+                title: 'Technologies:',
+                desc: 'ReactJS, React Router V6, Context API, Unsplash Data API...',
+            },
+        },
+    },
+
     {
         id: 3,
         title: 'Weather App',
@@ -110,11 +111,11 @@ const projectData = [
         desc: {
             feature: {
                 title: 'Features:',
-                desc: 'Get information about your current weather. Search another location weather, Dark/Light theme mode.',
+                desc: 'Get information about your current weather. Search another location weather, Dark/Light theme mode...',
             },
             technologies: {
                 title: 'Technologies:',
-                desc: 'ReactJS(Hooks), React Router V6, Styled Components, Material UI Icons, Context, Axios, OpenWeather API.',
+                desc: 'ReactJS(Hooks), React Router V6, Styled Components, Material UI Icons, Context, Axios, OpenWeather API...',
             },
         },
     },
@@ -126,11 +127,11 @@ const projectData = [
         desc: {
             feature: {
                 title: 'Features:',
-                desc: 'This App have CRUD todo jobs using everyday, and also have search & filter jobs features ',
+                desc: 'This App have CRUD todo jobs using everyday, and also have search & filter jobs features... ',
             },
             technologies: {
                 title: 'Technologies:',
-                desc: 'ReactJS (Hooks), Redux(Redux Tookit)',
+                desc: 'ReactJS (Hooks), Redux(Redux Tookit)...',
             },
         },
     },
