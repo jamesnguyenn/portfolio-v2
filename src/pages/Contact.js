@@ -18,7 +18,7 @@ const certifyData = [
     {
         id: 1,
         image: certify1,
-        href: 'https://www.hackerrank.com/certificates/8a9e03a48bb6',
+        href: 'https://www.hackerrank.com/certificates/5e7f9c83db41',
     },
     {
         id: 2,
