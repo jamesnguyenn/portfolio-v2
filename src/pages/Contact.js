@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import certify1 from '../assets/img/certify_1.png';
 import certify2 from '../assets/img/certify_2.png';
 import certify3 from '../assets/img/certify_3.png';
@@ -13,6 +13,7 @@ import { Pagination } from 'swiper';
 import 'swiper/scss';
 import 'swiper/scss/pagination';
 import Button from '../components/Button';
+import HandSlideAnimation from '../components/HandSlideAnimation';
 
 const certifyData = [
     {
@@ -43,6 +44,14 @@ const certifyData = [
 ];
 
 function Contact() {
+    const [isVisible, setVisible] = useState(true);
+
+    useEffect(() => {
+        const id = setTimeout(() => setVisible(false), 6000);
+        return () => {
+            clearTimeout(id);
+        };
+    }, []);
     return (
         <>
             <div
@@ -78,6 +87,9 @@ function Contact() {
                                                 alt="certify_james"
                                                 className="w-[70%] h-full object-contain"
                                             />
+                                            {isVisible && (
+                                                <HandSlideAnimation color="#000" />
+                                            )}
                                         </a>
                                     </SwiperSlide>
                                 );

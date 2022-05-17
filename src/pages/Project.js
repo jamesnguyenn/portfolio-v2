@@ -1,4 +1,4 @@
-import React, { memo } from 'react';
+import React, { memo, useState, useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/scss';
 import SliderDetail from '../components/SliderDetail';
@@ -12,8 +12,18 @@ import 'swiper/css/pagination';
 
 // import required modules
 import { Pagination } from 'swiper';
+import HandSlideAnimation from '../components/HandSlideAnimation';
 
 function Project() {
+    const [isVisible, setVisible] = useState(true);
+
+    useEffect(() => {
+        const id = setTimeout(() => setVisible(false), 6000);
+        return () => {
+            clearTimeout(id);
+        };
+    }, []);
+
     return (
         <>
             <div
@@ -29,8 +39,7 @@ function Project() {
                         of my projects are included here.
                     </p>
                 </div>
-
-                <div className="w-full h-[80%] lg:w-[80%] lg:h-full flex flex-wrap cursor-grab animate__animated animate__fadeIn animate__delay-2s">
+                <div className="w-full h-[80%] lg:w-[80%] lg:h-full flex flex-wrap cursor-grab animate__animated animate__fadeIn animate__delay-2s z-10">
                     <Swiper
                         pagination={{
                             dynamicBullets: true,
@@ -56,6 +65,10 @@ function Project() {
                                             {item.desc.technologies.title}
                                         </strong>
                                         {item.desc.technologies.desc}
+
+                                        {isVisible && (
+                                            <HandSlideAnimation color="#fff" />
+                                        )}
                                     </SliderDetail>
                                 </SwiperSlide>
                             );

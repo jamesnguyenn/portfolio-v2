@@ -7,7 +7,6 @@ import { useScrollContext } from '../contexts/ScrollBodyProvider';
 function About() {
     const coords = useViewPortContext();
     const { scrollPercent, scrollPercentPrevious } = useScrollContext();
-    console.log('🚀 ~ scrollPercent', scrollPercent);
 
     const fadeImage = useTransition(
         scrollPercent >= 25 && scrollPercent <= 40,
