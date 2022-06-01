@@ -15,8 +15,6 @@ import 'swiper/scss/pagination';
 import Button from '../components/Button';
 import HandSlideAnimation from '../components/HandSlideAnimation';
 
-import cv from '../assets/cv/NguyenQuangThien_FronEndDev_CV.pdf';
-
 const certifyData = [
     {
         id: 1,
@@ -138,7 +136,7 @@ function Contact() {
                     <div className="w-full h-full xl:h-[30%] p-4  flex flex-col items-center justify-center gap-[10px]">
                         <Button>
                             <a
-                                href="https://drive.google.com/file/d/1owr2IXBBgemm9HLtEbN5KfuAgY7KI6En/view?usp=sharing"
+                                href="https://drive.google.com/file/d/1rEpOH8L531uMnir1xFJbit50WkNSGTkM/view?usp=sharing"
                                 className=" w-[130px] flex items-center justify-center gap-[5px]"
                                 target="_blank"
                                 rel="noreferrer"
