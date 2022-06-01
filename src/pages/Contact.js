@@ -138,8 +138,10 @@ function Contact() {
                     <div className="w-full h-full xl:h-[30%] p-4  flex flex-col items-center justify-center gap-[10px]">
                         <Button>
                             <a
-                                href={cv}
+                                href="https://drive.google.com/file/d/1FMf0k75R5e6m5Vlaadgepz5Z0Z-E2Opr/view?usp=sharing"
                                 className=" w-[130px] flex items-center justify-center gap-[5px]"
+                                target="_blank"
+                                rel="noreferrer"
                                 download
                             >
                                 <span className=" uppercase text-xs">
