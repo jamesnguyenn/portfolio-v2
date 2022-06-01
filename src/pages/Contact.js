@@ -15,6 +15,8 @@ import 'swiper/scss/pagination';
 import Button from '../components/Button';
 import HandSlideAnimation from '../components/HandSlideAnimation';
 
+import cv from '../assets/cv/NguyenQuangThien_FronEndDev_CV.pdf';
+
 const certifyData = [
     {
         id: 1,
@@ -135,9 +137,13 @@ function Contact() {
                     </div>
                     <div className="w-full h-full xl:h-[30%] p-4  flex flex-col items-center justify-center gap-[10px]">
                         <Button>
-                            <div className=" w-[130px] flex items-center justify-center gap-[5px]">
+                            <a
+                                href={cv}
+                                className=" w-[130px] flex items-center justify-center gap-[5px]"
+                                download
+                            >
                                 <span className=" uppercase text-xs">
-                                    Dowload My CV
+                                    Download CV
                                 </span>
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
@@ -153,7 +159,7 @@ function Contact() {
                                         d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
                                     />
                                 </svg>
-                            </div>
+                            </a>
                         </Button>
                         <Button>
                             <a
